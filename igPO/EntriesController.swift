@@ -3,6 +3,7 @@ import UIKit
 //=================================
 class EntriesController: UIViewController
 {
+    //----- Methode qui va ouvrir le fichier json
     /* ---------------------------------------*/
     //let jsonManager = JsonManager(urlToJsonFile: "http://localhost/xampp/geneau/ig_po/json/data.json")
     let jsonManager = JsonManager(urlToJsonFile: "http://www.igweb.tv/ig_po/json/data.json")
@@ -12,6 +13,8 @@ class EntriesController: UIViewController
     var hows: [String] = []
     var progs: [String] = []
     @IBOutlet weak var theTableView: UITableView!
+    
+    //---- Methode qui telecharge les donnees json dans l'application
     /* ---------------------------------------*/
     override func viewDidLoad()
     {
@@ -24,17 +27,23 @@ class EntriesController: UIViewController
         self.hows = self.jsonManager.returnValues(2)
         self.progs = self.jsonManager.returnValues(3)
     }
+    
     /* ---------------------------------------*/
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     }
+    
+    //---- SECTION DES DIFFERENTES METHODES ASSOCIEES A UNE TABLEVIEW
+    
+    //--- Methode qui retourne le nombre de rangees
     /* ---------------------------------------*/
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         tableView.backgroundColor = UIColor.clear
         return self.names.count
     }
+    //-- Methode qui va populer les cellules du tableview
     /* ---------------------------------------*/
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell
     {
@@ -70,12 +79,16 @@ class EntriesController: UIViewController
         
         return cell
     }
+    
+    //--- Methode qui determine comment une cellule reagit quand la click
     /* ---------------------------------------*/
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath)
     {
         let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         selectedCell.contentView.backgroundColor = UIColor.lightGray
     }
+    
+    //--- Methode qui efface une cellule et ses donnees
     /* ---------------------------------------*/
     func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath)
     {
