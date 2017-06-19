@@ -58,7 +58,7 @@
                                                     <constraint firstAttribute="height" constant="91" id="VoT-og-05B"/>
                                                     <constraint firstAttribute="width" constant="91" id="YTB-f4-klh"/>
                                                 </constraints>
-                                                <state key="normal" image="grassetlogo" backgroundImage="grassetlogo"/>
+                                                <state key="normal" image="grassetlogo2" backgroundImage="grassetlogo2"/>
                                                 <connections>
                                                     <segue destination="E6X-9u-UeY" kind="presentation" id="j4B-cy-Ahn"/>
                                                 </connections>
@@ -539,7 +539,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="azu-Sb-XLw"/>
                                                             <constraint firstAttribute="height" constant="90" id="duP-XA-flA"/>
                                                         </constraints>
-                                                        <state key="normal" image="save.png">
+                                                        <state key="normal" image="save3">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
@@ -977,9 +977,9 @@
         <image name="Image" width="600" height="600"/>
         <image name="bg2" width="2500" height="2500"/>
         <image name="case.png" width="96" height="96"/>
-        <image name="grassetlogo" width="320" height="319"/>
+        <image name="grassetlogo2" width="320" height="319"/>
         <image name="logo.png" width="266" height="185"/>
-        <image name="save.png" width="519" height="333"/>
+        <image name="save3" width="118" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="j4B-cy-Ahn"/>
