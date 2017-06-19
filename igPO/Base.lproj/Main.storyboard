@@ -51,10 +51,11 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBX-w6-cOQ" userLabel="bouton sur logo">
-                                                <rect key="frame" x="338.5" y="28" width="91" height="63"/>
+                                                <rect key="frame" x="338.5" y="28" width="91" height="91"/>
                                                 <color key="backgroundColor" red="0.98315480740000005" green="1" blue="0.97650472340000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="63" id="E2N-Zs-R5F"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="91" id="1iS-h5-Tgg"/>
+                                                    <constraint firstAttribute="height" constant="91" id="VoT-og-05B"/>
                                                     <constraint firstAttribute="width" constant="91" id="YTB-f4-klh"/>
                                                 </constraints>
                                                 <state key="normal" image="grassetlogo" backgroundImage="grassetlogo"/>
@@ -63,7 +64,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="500" placeholderIntrinsicHeight="1500" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sOS-wM-map" userLabel="Stack Main">
-                                                <rect key="frame" x="50" y="123" width="668" height="1547"/>
+                                                <rect key="frame" x="50" y="151" width="668" height="1547"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="347" placeholderIntrinsicHeight="40" text="Inscription à la soirée des portes ouvertes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gf-Mq-TNh">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="40"/>
