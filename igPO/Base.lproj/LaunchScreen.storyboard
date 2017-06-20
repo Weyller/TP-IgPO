@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,38 +18,38 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="FcW-BC-drY">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="FcW-BC-drY">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="90Z-Vd-W4r">
-                                <rect key="frame" x="255" y="126" width="91" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grassetlogo3" translatesAutoresizingMaskIntoConstraints="NO" id="90Z-Vd-W4r">
+                                <rect key="frame" x="281" y="440" width="207" height="144"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="9CW-c0-W3c"/>
-                                    <constraint firstAttribute="height" constant="63" id="ihw-99-U3f"/>
+                                    <constraint firstAttribute="height" constant="144" id="7Uk-Lz-1Gk"/>
+                                    <constraint firstAttribute="width" constant="207" id="wuz-kG-BZ7"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.57975206069999996" blue="0.6755928457" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FcW-BC-drY" secondAttribute="trailing" id="D9A-fB-crV"/>
-                            <constraint firstItem="FcW-BC-drY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="DSz-P4-P6i"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FcW-BC-drY" secondAttribute="bottom" id="IeO-Bw-pq2"/>
-                            <constraint firstItem="90Z-Vd-W4r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TfU-hg-QOD"/>
-                            <constraint firstItem="90Z-Vd-W4r" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="106" id="Y4R-uv-kIa"/>
-                            <constraint firstItem="FcW-BC-drY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hzL-vd-c5N"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FcW-BC-drY" secondAttribute="bottom" id="FYT-pv-xn8"/>
+                            <constraint firstItem="FcW-BC-drY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Kon-nA-sFc"/>
+                            <constraint firstItem="FcW-BC-drY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="XGP-kY-Ahv"/>
+                            <constraint firstAttribute="trailing" secondItem="FcW-BC-drY" secondAttribute="trailing" id="epX-8f-Uba"/>
+                            <constraint firstItem="90Z-Vd-W4r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k9n-6S-Qwz"/>
+                            <constraint firstItem="90Z-Vd-W4r" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vUU-a2-f2N"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.34375" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="600" height="600"/>
-        <image name="logo.png" width="266" height="185"/>
+        <image name="bg3" width="2500" height="2500"/>
+        <image name="grassetlogo3" width="827" height="577"/>
     </resources>
 </document>
