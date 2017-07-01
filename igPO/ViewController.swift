@@ -35,7 +35,20 @@ class ViewController: UIViewController
         "AEC - Sécurité industrielle et commerciale (LCA.5Q)"]
     //let jsonManager = JsonManager(urlToJsonFile: "http://localhost/xampp/geneau/ig_po/json/data.json")
     let jsonManager = JsonManager(urlToJsonFile: "http://www.igweb.tv/ig_po/json/data.json")
-    /* ---------------------------------------*/
+    //---------------------
+    
+    
+    @IBOutlet weak var imagePressedForLogin: UIImageView!
+    
+    
+    func tapImage5Times()
+    {
+        performSegue(withIdentifier: "login", sender: nil)
+        
+    }
+    
+    
+    //------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -51,14 +64,23 @@ class ViewController: UIViewController
             arrMediaButtons[x].layer.borderColor = UIColor.white.cgColor
             
         }
-
+        
         
         
         
         jsonManager.importJSON()
         
         fillUpArray()
+        //-----------------
+        
+        let fiveTap = UITapGestureRecognizer(target: self, action:#selector(tapImage5Times))
+        fiveTap.numberOfTapsRequired = 4
+        imagePressedForLogin.addGestureRecognizer(fiveTap)
+        
+        
+        
     }
+
     /* ---------------------------------------*/
     func fillUpArray()
     {
