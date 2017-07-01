@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -129,7 +129,7 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRh-Sq-Ug1">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRh-Sq-Ug1">
                                         <rect key="frame" x="185" y="356" width="90" height="32"/>
                                         <color key="backgroundColor" red="0.80294471153846159" green="0.50218548581065858" blue="0.54002777252139367" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -156,7 +156,7 @@
                                             </mask>
                                         </variation>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-3l-c3R">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrer un identifiant" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIM-3l-c3R">
                                         <rect key="frame" x="25" y="81" width="401" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="401" id="7nM-gx-Yhr"/>
@@ -182,7 +182,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rp6-ji-uN3">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrer mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rp6-ji-uN3">
                                         <rect key="frame" x="25" y="187" width="401" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="401" id="4wW-Uw-TNM"/>
@@ -208,7 +208,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CN4-0J-mIp">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-entrer mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CN4-0J-mIp">
                                         <rect key="frame" x="25" y="292" width="401" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="9jc-JC-tYy"/>
@@ -243,7 +243,7 @@
                                             <constraint firstAttribute="width" constant="140" id="v1X-UC-Ynp"/>
                                             <constraint firstAttribute="height" constant="32" id="xzv-go-MVf"/>
                                         </constraints>
-                                        <state key="normal" title="Nouvel admin">
+                                        <state key="normal" title="Nouvel inscription">
                                             <color key="titleColor" red="0.98315480740000005" green="1" blue="0.97650472340000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="default">
@@ -445,18 +445,14 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="dsg-TL-xi1"/>
-                                <exclude reference="vid-Bg-WPL"/>
                                 <exclude reference="53Z-NX-0Un"/>
                                 <exclude reference="dyR-gU-sOZ"/>
+                                <exclude reference="dsg-TL-xi1"/>
+                                <exclude reference="vid-Bg-WPL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
-                                <exclude reference="GBI-Pb-AoB"/>
-                                <include reference="dsg-TL-xi1"/>
-                                <exclude reference="gOL-0w-qhN"/>
-                                <include reference="vid-Bg-WPL"/>
                                 <include reference="53Z-NX-0Un"/>
                                 <exclude reference="ELs-7M-JCl"/>
                                 <exclude reference="JLq-vC-LFK"/>
@@ -464,6 +460,10 @@
                                 <exclude reference="bzN-sJ-1pj"/>
                                 <include reference="dyR-gU-sOZ"/>
                                 <exclude reference="z9v-BS-nc9"/>
+                                <exclude reference="GBI-Pb-AoB"/>
+                                <include reference="dsg-TL-xi1"/>
+                                <exclude reference="gOL-0w-qhN"/>
+                                <include reference="vid-Bg-WPL"/>
                                 <exclude reference="8jK-Ih-Ai0"/>
                             </mask>
                         </variation>

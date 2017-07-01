@@ -42,6 +42,19 @@ class ViewController: UIViewController
         
         arrMediaButtons = [amis, radio, pub_internet, journaux, moteur, sociaux, tv, autres]
         
+        
+        //---------------------- Change bordures des bouttons
+        for x in 0...7
+        {
+            arrMediaButtons[x].layer.cornerRadius = 5;
+            arrMediaButtons[x].layer.borderWidth = 3;
+            arrMediaButtons[x].layer.borderColor = UIColor.white.cgColor
+            
+        }
+
+        
+        
+        
         jsonManager.importJSON()
         
         fillUpArray()
