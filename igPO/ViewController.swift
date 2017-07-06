@@ -37,10 +37,13 @@ class ViewController: UIViewController
     let jsonManager = JsonManager(urlToJsonFile: "http://www.igweb.tv/ig_po/json/data.json")
     //---------------------
     
+    //-------------------- Pour compter le nombre de programmes Checked
+    var checkCounter = 0
     
+    //----------------------------------- Boutton pour acceder a la page ADMIN
     @IBOutlet weak var imagePressedForLogin: UIImageView!
-    
-    
+
+    //------------------------------------------
     func tapImage5Times()
     {
         performSegue(withIdentifier: "login", sender: nil)
@@ -56,7 +59,7 @@ class ViewController: UIViewController
         arrMediaButtons = [amis, radio, pub_internet, journaux, moteur, sociaux, tv, autres]
         
         
-        //---------------------- Change bordures des bouttons
+        //---------------------- Change bordures des bouttons Medias
         for x in 0...7
         {
             arrMediaButtons[x].layer.cornerRadius = 5;
@@ -64,21 +67,17 @@ class ViewController: UIViewController
             arrMediaButtons[x].layer.borderColor = UIColor.white.cgColor
             
         }
-        
-        
-        
+        //-----------------------------------------------------
         
         jsonManager.importJSON()
         
         fillUpArray()
-        //-----------------
         
+        //------------------------------------------------------
         let fiveTap = UITapGestureRecognizer(target: self, action:#selector(tapImage5Times))
         fiveTap.numberOfTapsRequired = 4
         imagePressedForLogin.addGestureRecognizer(fiveTap)
-        
-        
-        
+      
     }
 
     /* ---------------------------------------*/
@@ -120,18 +119,35 @@ class ViewController: UIViewController
     /* ---------------------------------------*/
     @IBAction func buttonManager(_ sender: UIButton)
     {
+        
+        
+        
         let buttonIndexInArray = sender.tag - 100
         
         if !arrForButtonManagement[buttonIndexInArray]
         {
-            sender.setImage(UIImage(named: "case_select.png"), for: UIControlState())
-            arrForButtonManagement[buttonIndexInArray] = true
+            if checkCounter > 2{
+                alert("3 choix maximun s.v.p")
+            }
+            else{
+                
+                sender.setImage(UIImage(named: "case_select.png"), for: UIControlState())
+                arrForButtonManagement[buttonIndexInArray] = true
+                checkCounter += 1
+            }
+            
         }
         else
         {
             sender.setImage(UIImage(named: "case.png"), for: UIControlState())
             arrForButtonManagement[buttonIndexInArray] = false
+            
+            if checkCounter > 0{
+                checkCounter -= 1
+            }
         }
+    
+        
     }
     /* ---------------------------------------*/
     func deselectAllButtons()
@@ -168,6 +184,9 @@ class ViewController: UIViewController
         resetAllMediaButtonAlphas()
         
         alert("Les données ont été sauvegardées...")
+        //---------------------------------
+        print("checked item: \(checkCounter)")
+        
     }
     /* ---------------------------------------*/
     func alert(_ theMessage: String)
