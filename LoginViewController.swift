@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
     }
     //------------------
     
+    @IBOutlet weak var BackView: UIView!
     
     @IBAction func bouttonInscription(_ sender: UIButton) {
         
@@ -48,7 +49,10 @@ class LoginViewController: UIViewController {
     //------------------
     override func viewDidLoad() {
         
-       // <#code#>
+        BackView.layer.cornerRadius = 5;
+        BackView.layer.borderWidth = 3;
+        BackView.layer.borderColor = UIColor.white.cgColor
+        
     }
 
 }

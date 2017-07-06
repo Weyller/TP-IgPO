@@ -92,13 +92,13 @@ class ViewController: UIViewController
     /* ---------------------------------------*/
     func manageSelectedPrograms() -> String
     {
-        var stringToReturn: String = ". "
+        var stringToReturn: String = " "
         
         for x in 0 ..< arrProgramNames.count
         {
             if arrForButtonManagement[x]
             {
-                stringToReturn += arrProgramNames[x] + "\n. "
+                stringToReturn += arrProgramNames[x] + "\n "
             }
         }
         

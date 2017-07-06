@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //--------------------------------- Pause de 2 secondes avant de passer a la 1ere page
-        sleep(1)
+        sleep(UInt32(0.02))
         
         return true
     }
