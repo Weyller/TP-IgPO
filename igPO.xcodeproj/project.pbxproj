@@ -35,6 +35,7 @@
 		07A503FA1CB317ED00E56CDF /* CSVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A503F91CB317ED00E56CDF /* CSVController.swift */; };
 		9B6414031EF9ADF200592DF2 /* grassetlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6414021EF9ADF200592DF2 /* grassetlogo3.png */; };
 		9B6414051EFB154100592DF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6414041EFB154100592DF2 /* LoginViewController.swift */; };
+		9B999F2C1F13C44300891477 /* sauvegarde.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F2B1F13C44300891477 /* sauvegarde.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		07A503F91CB317ED00E56CDF /* CSVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVController.swift; sourceTree = "<group>"; };
 		9B6414021EF9ADF200592DF2 /* grassetlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grassetlogo3.png; path = Images/grassetlogo3.png; sourceTree = "<group>"; };
 		9B6414041EFB154100592DF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		9B999F2B1F13C44300891477 /* sauvegarde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sauvegarde.png; path = Images/sauvegarde.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		07040CEC1CAD935300AA29C6 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9B999F2B1F13C44300891477 /* sauvegarde.png */,
 				9B6414021EF9ADF200592DF2 /* grassetlogo3.png */,
 				07A503E51CB2FE3900E56CDF /* 29.png */,
 				07A503E61CB2FE3900E56CDF /* 40.png */,
@@ -214,6 +217,7 @@
 				07A503F31CB2FE3900E56CDF /* 80.png in Resources */,
 				07A503EF1CB2FE3900E56CDF /* 29.png in Resources */,
 				07A503F51CB2FE3900E56CDF /* 120.png in Resources */,
+				9B999F2C1F13C44300891477 /* sauvegarde.png in Resources */,
 				07040CE31CAD916400AA29C6 /* LaunchScreen.storyboard in Resources */,
 				076A07A71CAEB7B900865DE8 /* logo.png in Resources */,
 				076A07B01CAEC2E800865DE8 /* case.png in Resources */,
