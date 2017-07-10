@@ -104,7 +104,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resetUserDefaults()// Reset user and password to Default values
+       // resetUserDefaults()// Reset user and password to Default values
         setLabelandButton()
         
         BackView.layer.cornerRadius = 5;
