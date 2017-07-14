@@ -187,6 +187,9 @@ class ViewController: UIViewController
         //---------------------------------
         print("checked item: \(checkCounter)")
         
+        checkCounter = 0
+        //--------------  Reset le compteur de choix de programmes
+        
     }
     /* ---------------------------------------*/
     func alert(_ theMessage: String)
