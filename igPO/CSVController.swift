@@ -15,6 +15,9 @@ class CSVController: UIViewController
         
         self.jsonManager.importJSON()
         self.cvsTextView.text = self.jsonManager.converJsonToCsv("NOM,TÉLÉPHONE,COURRIEL,COMMENT,PROGRAMMES")
+        
+             
+        
     }
     /* ---------------------------------------*/
     override func didReceiveMemoryWarning()

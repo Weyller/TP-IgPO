@@ -63,7 +63,7 @@ class ViewController: UIViewController
         for x in 0...7
         {
             arrMediaButtons[x].layer.cornerRadius = 5;
-            arrMediaButtons[x].layer.borderWidth = 3;
+            arrMediaButtons[x].layer.borderWidth = 4;
             arrMediaButtons[x].layer.borderColor = UIColor.white.cgColor
             
         }
@@ -217,13 +217,19 @@ class ViewController: UIViewController
     {
         resetAllMediaButtonAlphas()
         
+        
         pickerChoice = (sender.titleLabel?.text)!
         
         if sender.alpha == 0.5
         {
-            sender.alpha = 1.0
+            sender.alpha = 1
+           
+           sender.setTitleColor(UIColor.black, for: .normal)
+            
+            //sender.backgroundColor = UIColor.black
         }
         else
+            
         {
             sender.alpha = 0.5
         }
