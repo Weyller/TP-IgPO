@@ -33,7 +33,9 @@
 		07A503F71CB2FE3900E56CDF /* 167.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A503ED1CB2FE3900E56CDF /* 167.png */; };
 		07A503F81CB2FE3900E56CDF /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A503EE1CB2FE3900E56CDF /* 180.png */; };
 		07A503FA1CB317ED00E56CDF /* CSVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A503F91CB317ED00E56CDF /* CSVController.swift */; };
-		9B1A38951F1BD70900750EAB /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A38941F1BD70900750EAB /* VideoViewController.swift */; };
+		9B1A38991F1BDD1000750EAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1A38971F1BDD1000750EAB /* AVFoundation.framework */; };
+		9B1A389A1F1BDD1000750EAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1A38981F1BDD1000750EAB /* AVKit.framework */; };
+		9B1A389C1F1BE3C100750EAB /* tutocsv.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A389B1F1BE3C100750EAB /* tutocsv.mov */; };
 		9B6414031EF9ADF200592DF2 /* grassetlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6414021EF9ADF200592DF2 /* grassetlogo3.png */; };
 		9B6414051EFB154100592DF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6414041EFB154100592DF2 /* LoginViewController.swift */; };
 		9B999F2C1F13C44300891477 /* sauvegarde.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F2B1F13C44300891477 /* sauvegarde.png */; };
@@ -77,7 +79,9 @@
 		07A503ED1CB2FE3900E56CDF /* 167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 167.png; path = Images/167.png; sourceTree = "<group>"; };
 		07A503EE1CB2FE3900E56CDF /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 180.png; path = Images/180.png; sourceTree = "<group>"; };
 		07A503F91CB317ED00E56CDF /* CSVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVController.swift; sourceTree = "<group>"; };
-		9B1A38941F1BD70900750EAB /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		9B1A38971F1BDD1000750EAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B1A38981F1BDD1000750EAB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9B1A389B1F1BE3C100750EAB /* tutocsv.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = tutocsv.mov; path = ../../tutocsv.mov; sourceTree = "<group>"; };
 		9B6414021EF9ADF200592DF2 /* grassetlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grassetlogo3.png; path = Images/grassetlogo3.png; sourceTree = "<group>"; };
 		9B6414041EFB154100592DF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		9B999F2B1F13C44300891477 /* sauvegarde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sauvegarde.png; path = Images/sauvegarde.png; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1A38991F1BDD1000750EAB /* AVFoundation.framework in Frameworks */,
+				9B1A389A1F1BDD1000750EAB /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +114,7 @@
 			children = (
 				07040CD71CAD916400AA29C6 /* igPO */,
 				07040CD61CAD916400AA29C6 /* Products */,
+				9B1A38961F1BDD1000750EAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +132,6 @@
 				076A07A81CAEBE8500865DE8 /* Fonts */,
 				07040CEC1CAD935300AA29C6 /* images */,
 				07040CD81CAD916400AA29C6 /* AppDelegate.swift */,
-				9B1A38941F1BD70900750EAB /* VideoViewController.swift */,
 				07040CDA1CAD916400AA29C6 /* ViewController.swift */,
 				07407F6D1CB2BAE7009152E4 /* EntriesController.swift */,
 				07A503F91CB317ED00E56CDF /* CSVController.swift */,
@@ -142,6 +148,7 @@
 		07040CEC1CAD935300AA29C6 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9B1A389B1F1BE3C100750EAB /* tutocsv.mov */,
 				9B999F3D1F13DEF300891477 /* Images */,
 				9B999F3B1F13DAC800891477 /* grassetlogo4.png */,
 				9B999F391F13DA2A00891477 /* grassetlogo4 */,
@@ -180,6 +187,15 @@
 				076A07AB1CAEBE9400865DE8 /* cordiai.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9B1A38961F1BDD1000750EAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B1A38971F1BDD1000750EAB /* AVFoundation.framework */,
+				9B1A38981F1BDD1000750EAB /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +282,7 @@
 				07A503F11CB2FE3900E56CDF /* 58.png in Resources */,
 				07407F6A1CAF05D8009152E4 /* save.png in Resources */,
 				076A07AD1CAEBE9400865DE8 /* cordiab.ttf in Resources */,
+				9B1A389C1F1BE3C100750EAB /* tutocsv.mov in Resources */,
 				07040CDE1CAD916400AA29C6 /* Main.storyboard in Resources */,
 				9B6414031EF9ADF200592DF2 /* grassetlogo3.png in Resources */,
 				9B999F381F13D5BB00891477 /* csvButton2.png in Resources */,
@@ -286,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6414051EFB154100592DF2 /* LoginViewController.swift in Sources */,
-				9B1A38951F1BD70900750EAB /* VideoViewController.swift in Sources */,
 				07407F6E1CB2BAE7009152E4 /* EntriesController.swift in Sources */,
 				07407F6C1CB1BF49009152E4 /* JsonManager.swift in Sources */,
 				07040CDB1CAD916400AA29C6 /* ViewController.swift in Sources */,

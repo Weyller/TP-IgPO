@@ -1,8 +1,15 @@
 //=================================
 import UIKit
+import AVKit
+import AVFoundation
 //=================================
 class EntriesController: UIViewController
 {
+ 
+    var playerController = AVPlayerViewController()
+    var player:AVPlayer?
+
+    
     //----- Methode qui va ouvrir le fichier json
     /* ---------------------------------------*/
     //let jsonManager = JsonManager(urlToJsonFile: "http://localhost/xampp/geneau/ig_po/json/data.json")
@@ -14,19 +21,54 @@ class EntriesController: UIViewController
     var progs: [String] = []
     @IBOutlet weak var theTableView: UITableView!
     
+    @IBOutlet weak var buttonTuto: UIButton!
+    
+    
     //---- Methode qui telecharge les donnees json dans l'application
     /* ---------------------------------------*/
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+        buttonTuto.layer.cornerRadius = 5;
+        buttonTuto.layer.borderWidth = 3;
+        buttonTuto.layer.borderColor = UIColor.white.cgColor
+        
+        
+        //-----------------------------
         self.jsonManager.importJSON()
         self.names = self.jsonManager.returnKeys()
         self.phones = self.jsonManager.returnValues(0)
         self.emails = self.jsonManager.returnValues(1)
         self.hows = self.jsonManager.returnValues(2)
         self.progs = self.jsonManager.returnValues(3)
+        //==========================
+        let videoString:String? = Bundle.main.path(forResource: "tutocsv", ofType: ".mov")
+        
+        if let url = videoString {
+            
+            let videoURL = NSURL(fileURLWithPath: url)
+            
+            self.player = AVPlayer(url: videoURL as URL)
+            self.playerController.player = self.player
+        }
+        //------------------------------------
     }
+    
+    //--------------------------------------------
+    @IBAction func bouttonPlay(_ sender: UIButton) {
+       
+        self.present(self.playerController, animated: true, completion: {
+            
+            self.playerController.player?.play()
+        })
+        
+    
+    
+    }
+
+    
+    
     
     /* ---------------------------------------*/
     override func didReceiveMemoryWarning()
