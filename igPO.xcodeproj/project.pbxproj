@@ -35,7 +35,6 @@
 		07A503FA1CB317ED00E56CDF /* CSVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A503F91CB317ED00E56CDF /* CSVController.swift */; };
 		9B1A38991F1BDD1000750EAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1A38971F1BDD1000750EAB /* AVFoundation.framework */; };
 		9B1A389A1F1BDD1000750EAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1A38981F1BDD1000750EAB /* AVKit.framework */; };
-		9B1A389C1F1BE3C100750EAB /* tutocsv.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A389B1F1BE3C100750EAB /* tutocsv.mov */; };
 		9B6414031EF9ADF200592DF2 /* grassetlogo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6414021EF9ADF200592DF2 /* grassetlogo3.png */; };
 		9B6414051EFB154100592DF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6414041EFB154100592DF2 /* LoginViewController.swift */; };
 		9B999F2C1F13C44300891477 /* sauvegarde.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F2B1F13C44300891477 /* sauvegarde.png */; };
@@ -48,6 +47,7 @@
 		9B999F3A1F13DA2A00891477 /* grassetlogo4 in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F391F13DA2A00891477 /* grassetlogo4 */; };
 		9B999F3C1F13DAC800891477 /* grassetlogo4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F3B1F13DAC800891477 /* grassetlogo4.png */; };
 		9B999F3E1F13DEF300891477 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F3D1F13DEF300891477 /* Images */; };
+		9BA975AC1F1DA81D00720A30 /* tutocsv.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9BA975AB1F1DA81D00720A30 /* tutocsv.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,6 @@
 		07A503F91CB317ED00E56CDF /* CSVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVController.swift; sourceTree = "<group>"; };
 		9B1A38971F1BDD1000750EAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9B1A38981F1BDD1000750EAB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		9B1A389B1F1BE3C100750EAB /* tutocsv.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = tutocsv.mov; path = ../../tutocsv.mov; sourceTree = "<group>"; };
 		9B6414021EF9ADF200592DF2 /* grassetlogo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grassetlogo3.png; path = Images/grassetlogo3.png; sourceTree = "<group>"; };
 		9B6414041EFB154100592DF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		9B999F2B1F13C44300891477 /* sauvegarde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sauvegarde.png; path = Images/sauvegarde.png; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		9B999F391F13DA2A00891477 /* grassetlogo4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = grassetlogo4; path = Images/grassetlogo4; sourceTree = "<group>"; };
 		9B999F3B1F13DAC800891477 /* grassetlogo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grassetlogo4.png; path = Images/grassetlogo4.png; sourceTree = "<group>"; };
 		9B999F3D1F13DEF300891477 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		9BA975AB1F1DA81D00720A30 /* tutocsv.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = tutocsv.mov; path = Images/tutocsv.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 		07040CEC1CAD935300AA29C6 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				9B1A389B1F1BE3C100750EAB /* tutocsv.mov */,
+				9BA975AB1F1DA81D00720A30 /* tutocsv.mov */,
 				9B999F3D1F13DEF300891477 /* Images */,
 				9B999F3B1F13DAC800891477 /* grassetlogo4.png */,
 				9B999F391F13DA2A00891477 /* grassetlogo4 */,
@@ -282,7 +282,7 @@
 				07A503F11CB2FE3900E56CDF /* 58.png in Resources */,
 				07407F6A1CAF05D8009152E4 /* save.png in Resources */,
 				076A07AD1CAEBE9400865DE8 /* cordiab.ttf in Resources */,
-				9B1A389C1F1BE3C100750EAB /* tutocsv.mov in Resources */,
+				9BA975AC1F1DA81D00720A30 /* tutocsv.mov in Resources */,
 				07040CDE1CAD916400AA29C6 /* Main.storyboard in Resources */,
 				9B6414031EF9ADF200592DF2 /* grassetlogo3.png in Resources */,
 				9B999F381F13D5BB00891477 /* csvButton2.png in Resources */,
